@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bgColor: rgb(0, 151, 28);
+  --textColorHeading: rgb(0, 0, 0);
+  --headingFontSize: 1.5rem;
+}
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: var(--bgColor);
+}
+
+.flex-wrapper {
+  height: 70lvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.flex-wrapper > h1 {
+  margin: 5px;
+  font-size: var(--headingFontSize);
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--textColorHeading);
+  font-weight: bold;
+}
+.flex-wrapper > p {
+  text-transform: capitalize;
+  margin-top: 15px;
+  text-align: center;
+  color: var(--textColorHeading);
+  font-weight: 600;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.scoreBox {
+  margin-top: 20px;
+  border-radius: 30px;
+  border-style: solid;
+
+  border-color: rgb(255, 255, 255);
+  background-color: rgb(3, 5, 38);
+  height: 300px;
+  width: 300px;
+  display: flex;
+  padding: 7px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: 1s;
+}
+.scoreBox:hover {
+  box-shadow: rgb(0, 0, 0) 4px 6px 8px;
+  transform: scale(1.1);
+}
+.scoreBox > h3 {
+  margin-bottom: 10px;
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+}
+.scoreBox > h2 {
+  text-transform: capitalize;
+  font-style: italic;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.redFail {
+  color: red;
+}
+h4 {
+  color: red;
+}
