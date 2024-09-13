@@ -4,9 +4,11 @@
   box-sizing: border-box;
 }
 :root {
-  --bgColor: rgb(0, 151, 28);
-  --textColorHeading: rgb(0, 0, 0);
+  --bgColor: rgb(41, 41, 41);
+  --textColorHeading: rgb(255, 255, 255);
   --headingFontSize: 1.5rem;
+  --inputBtn-theme: rgb(0, 7, 136);
+  --inputBtnText-color: white;
 }
 html {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -46,7 +48,7 @@ body {
   border-style: solid;
 
   border-color: rgb(255, 255, 255);
-  background-color: rgb(3, 5, 38);
+  background-color: var(--inputBtn-theme);
   height: 300px;
   width: 300px;
   display: flex;
@@ -77,4 +79,32 @@ body {
 }
 h4 {
   color: red;
+}
+.userInputs {
+  margin-top: 3.5vh;
+}
+.userInputs > button,
+input {
+  background-color: var(--inputBtn-theme);
+  color: var(--inputBtnText-color);
+  font-weight: bold;
+  font-style: italic;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+button:hover {
+  margin-left: 10px;
+  transform: scale(1.1);
+  border-bottom-style: solid;
+  box-shadow: rgb(0, 0, 0) 4px 6px 8px;
+}
+input:hover {
+  box-shadow: rgb(0, 0, 0) 4px 6px 8px;
+  border-bottom-style: solid;
+  margin-right: 10px;
+  transform: scale(1.1);
 }
